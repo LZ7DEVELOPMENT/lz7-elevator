@@ -1,0 +1,30 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Dependencies, logs and temporary files
+node_modules/
+*.log
+*.tmp
+*.bak
+*.zip
+*.7z
+
+# Local worktrees and generated output
+.worktrees/
+worktrees/
+dist/
+work/
+
+# Legacy artwork retained locally, not part of the release
+assets/lz7-elevator-preview.png
