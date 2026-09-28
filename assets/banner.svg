@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+<title id="title">LZ7 Elevator</title><desc id="desc">Standalone FiveM resource. Multiple elevators. Configurable destinations. NUI keypad.</desc>
+<defs><linearGradient id="bg"><stop stop-color="#0b1420"/><stop offset="1" stop-color="#071015"/></linearGradient><linearGradient id="a"><stop stop-color="#5fffe1"/><stop offset="1" stop-color="#39b8f8"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#7acfd0" stroke-opacity=".06"/></pattern></defs>
+<rect width="1280" height="360" rx="22" fill="url(#bg)"/><rect width="1280" height="360" rx="22" fill="url(#grid)"/>
+<rect x="56" y="46" width="4" height="20" rx="2" fill="#5fffe1"/><text x="76" y="62" fill="#a7c0c7" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="4">LZ7 DEVELOPMENT</text>
+<text x="55" y="170" fill="#f3fbff" font-family="Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-3">LZ7 <tspan fill="url(#a)">ELEVATOR</tspan></text>
+<text x="59" y="214" fill="#b7cbd2" font-family="Arial,sans-serif" font-size="23">A standalone elevator resource for FiveM.</text>
+<text x="60" y="267" fill="#5fffe1" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">MULTIPLE ELEVATORS / CUSTOM DESTINATIONS / NUI KEYPAD</text>
+<g transform="translate(1000 65)" fill="none" stroke="url(#a)" stroke-width="5"><rect width="160" height="200" rx="16"/><path d="M80 200V50M25 200V50H135V200M48 28l12-12 12 12M92 16l12 12 12-12"/><path d="M80 50V200"/></g>
+<path d="M60 306H1220" stroke="#253945"/><text x="60" y="333" fill="#6f949f" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">LUA + HTML + CSS + JAVASCRIPT</text><text x="1220" y="333" text-anchor="end" fill="#6f949f" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">RESOURCE / 1.0.0</text>
+</svg>
