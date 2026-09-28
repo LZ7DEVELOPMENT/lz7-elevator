@@ -1,0 +1,152 @@
+:root {
+    --panel-bg: rgba(14, 17, 20, 0.94);
+    --panel-edge: rgba(166, 183, 194, 0.45);
+    --button-bg: #20262b;
+    --button-lit: #9ee7ff;
+    --button-text: #f6fbff;
+    --muted: #9ba7af;
+    --danger: #ff6f6f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    background: transparent;
+    user-select: none;
+}
+
+.elevator {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4.5vw;
+}
+
+.elevator.is-open {
+    display: flex;
+}
+
+.panel {
+    width: 292px;
+    border: 1px solid var(--panel-edge);
+    border-radius: 6px;
+    padding: 14px;
+    color: var(--button-text);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 34%),
+        var(--panel-bg);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 26px;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.close-button {
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: white;
+    border-color: rgba(255, 111, 111, 0.65);
+}
+
+.display {
+    height: 42px;
+    margin: 8px 0 12px;
+    border: 1px solid rgba(158, 231, 255, 0.22);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--button-lit);
+    background: rgba(3, 9, 12, 0.78);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-shadow: 0 0 14px rgba(158, 231, 255, 0.55);
+}
+
+.current-floor {
+    margin-top: 10px;
+    color: var(--button-lit);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.display.is-error {
+    color: var(--danger);
+    border-color: rgba(255, 111, 111, 0.45);
+    text-shadow: 0 0 14px rgba(255, 111, 111, 0.5);
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+}
+
+.keypad button {
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 4px;
+    color: var(--button-text);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.01)), var(--button-bg);
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.keypad button:hover {
+    transform: translateY(-1px);
+    color: var(--button-lit);
+    border-color: rgba(158, 231, 255, 0.58);
+}
+
+.keypad button:active {
+    transform: translateY(1px);
+}
+
+.enter {
+    color: #15191c !important;
+    border-color: rgba(158, 231, 255, 0.75) !important;
+    background: linear-gradient(180deg, #c4f3ff, #6bcfe9) !important;
+}
+
+.zero {
+    grid-column: 2;
+}
+
+.hint {
+    min-height: 16px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 11px;
+    text-align: center;
+}
